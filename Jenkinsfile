@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-               git branch: 'main',  url: 'https://github.com/javaexpresschannel/eureka-server.git'
+               git branch: 'main',  url: 'https://github.com/PrateekAnand/eureka-server.git'
             }
         }
 
@@ -26,7 +26,7 @@ pipeline {
 
         stage('Docker Build') {
             steps {
-                sh 'docker build -t javaexpress/eureka-server:latest .'
+                sh 'docker build -t prateekanand02/eureka-server:latest .'
             }
         }
 
